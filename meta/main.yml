@@ -151,12 +151,12 @@ galaxy_info:
   #  - 5
   #  - 6
     - 7
-  - name: CentOS
-    versions:
+  #- name: CentOS
+  #  versions:
   #  - all
   #  - 5
   #  - 6
-    - 7
+  #  - 7
   #- name: Windows
   #  versions:
   #  - all
