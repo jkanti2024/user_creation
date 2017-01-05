@@ -33,11 +33,12 @@ Example Playbook
 ----------------
 You can run the following to execute this role
 
+```
 ---
 - hosts: test
   roles:
       - { role: user_creation }
-
+```
 
 License
 -------
