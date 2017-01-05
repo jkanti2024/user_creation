@@ -37,7 +37,7 @@ You can run the following to execute this role
 ---
 - hosts: test
   roles:
-      - { role: user_creation }
+      - { role: jkantihub.user_creation }
 ```
 
 License
