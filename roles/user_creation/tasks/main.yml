@@ -1,6 +1,5 @@
 ---
 # tasks file for user_creation
-# Every machine should have the base user
 - user: 
     name: '{{ myuser }}'
     comment: "user1"
