@@ -13,6 +13,7 @@ Role Variables
 The username and desired userid should be entered in vars/main.yaml
 
 eg..
+```
 myusers :
     - name: 'testuser1'
       uid: 10001 
@@ -20,6 +21,7 @@ myusers :
       uid: 10002
     - name: 'testuser3'
       uid: 10003
+```
 
 Additional defaults like shell , ssh id name etc can also be mentioned if needed
 
