@@ -11,6 +11,7 @@
     uid: 1001
 
 - name: multiple users
+  with_items: '{{myusers}}'
   user: 
     name="{{item.name}}" 
     state=present
@@ -19,12 +20,4 @@
     ssh_key_bits=2048
     ssh_key_file='.ssh/id_rsa'
     uid="{{item.uid}}"    
-  with_items:
-    - name: 'testuser1'
-      uid: 10001 
-    - name: 'testuser2'
-      uid: 10002
-    - name: 'testuser3'
-      uid: 10003
-  loop_control:
-    label: "{{item.name}}"
+ 

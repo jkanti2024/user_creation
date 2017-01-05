@@ -1,38 +1,47 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+These are a set of roles for user management using Ansible.
 
 Requirements
 ------------
+The role has been tested with Ansible 2.x
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
 Role Variables
 --------------
+The username and desired userid should be entered in vars/main.yaml
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+eg..
+myusers :
+    - name: 'testuser1'
+      uid: 10001 
+    - name: 'testuser2'
+      uid: 10002
+    - name: 'testuser3'
+      uid: 10003
+
+Additional defaults like shell , ssh id name etc can also be mentioned if needed
+
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
 Example Playbook
 ----------------
+You can run the following to execute this role
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+---
+- hosts: test
+  roles:
+      - { role: user_creation }
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
 
 License
 -------
 
-BSD
+GPL v3
 
 Author Information
 ------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Kanti Jadia jkantihub
